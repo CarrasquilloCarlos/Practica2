@@ -1,35 +1,67 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"><!--lenguaje de defecto es ingles-->
     <head>
-        <meta charset="UTF-8">
-        <meta hhtp-equip="X-UA-Compatible" content="ÏE=edge">
+        <meta charset="UTF-8">       <!--en las proximas tres lineas utilice meta para configuraion de la página-->
+        <meta hhtp-equip="X-UA-Compatible" content="ÏE=edge"><!-- la pagina esta diseñada para utilizarse con MS Edge o compatibles-->
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>Tim Berner-Lee</title>
-        
+               <!--utilizo css interno para modificar el background a color melocotón-->
+        <style> 
+
+            #contenido {background-color: #FDEBD0;}   
+            #contenido {font-size: 20px;}
+            .seccion {background-color: lightblue;}      
+
+        </style> 
+              <!-- modifique el body con el texto en tamaño de 20 pixeles-->
+              <!-- cambie el color de la clase seccion a lightblue-->
+           
     </head>
-    <body>
-        <div id="encabezado">
-<h1>Tim Berner-Lee</h1>
-<img src="TimBernerLee.jpg" alt="Foto de Tim Berner-Lee">
-<h2>De Wikipedia, la enciclopedia libre</h2>
-    </div>
-<div>
-      <p>Sir Timothy John "Tim" Berners-Lee, (nacido el 8 de junio de 1955), también conocido como TimBL,
-es un científico informático inglés, más conocido como el inventor de la <strong>World Wide Web</strong>. 
-Hizo una propuesta para un sistema de gestión de la información en marzo de 1989, e implementó la 
-primera comunicación exitosa entre un cliente y un servidor de Protocolo de Transferencia de Hipertexto
-a través de Internet en algún momento a mediados de noviembre de ese mismo año.</p>
- </div>
- <div>
-      <p>Berners-Lee es el director del <em>World Wide Web Consortium </em>(W3C), que supervisa el desarrollo continuo de la Web. 
-También es fundador de la World Wide Web Foundation, investigador principal y titular de Founders Chair en el 
-Laboratorio de Ciencias de la Computación e Inteligencia Artificial del MIT.</p>
-</div>
-<div>
-      <p>En 2004, Berners-Lee fue nombrado caballero por la reina Isabel II por su trabajo pionero. 
-Fue honrado como el "Inventor de la World Wide Web" durante la ceremonia de apertura de los Juegos Olímpicos de Verano 2012.</p>
-</div>
+    <body id="contenido"> <!--le añadi un id a el tag de body-->
+        <header> <!--este es el header de la pagina-->
+            <nav></nav>   <!--añadi los tag de nav segun las instrucciones, esta vacio-->
+        <div>
+        <h1>Tim Berner-Lee</h1> <!--nombre de la persona-->
+        <img src="TimBernerLee.jpg" height=200 lenght=200 alt="Foto de Tim Berner-Lee"><!--este es el anchor para la foto, modifique su altura y largo-->
+        <h2>De <a href="http://www.wikipedia.org">Wikipedia</a>, la enciclopedia libre</h2><!--inclui un anchor para wikipedia en el subtitulo-->
+        </div>
+        </header>        
+        <br>
+        <div>
+        <aside></aside><!--inclui un aside segun instrucciones pero esta vacio-->
+         <article class="seccion">  <!--añadi la clase seccion al articulo--> 
+        <p>Sir Timothy John "Tim" Berners-Lee, (nacido el 8 de junio de 1955), también conocido como TimBL,
+         es un científico informático inglés, más conocido como el inventor de la <strong>World Wide Web</strong>. 
+        Hizo una propuesta para un sistema de gestión de la información en marzo de 1989, e implementó la 
+        primera comunicación exitosa entre un cliente y un servidor de Protocolo de Transferencia de Hipertexto
+        a través de Internet en algún momento a mediados de noviembre de ese mismo año.</p>
+        </article>
+        </div>
+        <br>
+        <article class="seccion"><!--añadi clase seccion al articulo-->
+        <div>
+        <p>Berners-Lee es el director del <em>World Wide Web Consortium </em>(W3C), que supervisa el desarrollo continuo de la Web. 
+       También es fundador de la World Wide Web Foundation, investigador principal y titular de Founders Chair en el 
+        Laboratorio de Ciencias de la Computación e Inteligencia Artificial del MIT.</p>
+        </div>
+         </article>
+        <br>
+        <article class="seccion"><!--añadi clase seccion al articulo-->
+     <div>
+     <p>En 2004, Berners-Lee fue nombrado caballero por la reina Isabel II por su trabajo pionero. 
+        Fue honrado como el "Inventor de la World Wide Web" durante la ceremonia de apertura de los Juegos Olímpicos de Verano 2012.</p>
+      </div>
+      </article>
+      <br>
+      <section><!--utilice section para identificar informacion de contacto-->
+      <footer>  <!-- este es el footer de la pagina-->        
+      <div>
+         <p><em>Creado por : Carlos Carrasquillo</em></p>
+         <a href="mailto:carlos.carrasquillo@gmail.com">Email</a>
+      </div>
+      </footer>
+      </section>
+    </body>
 
 
-</body>
 </html>
